@@ -1,0 +1,27 @@
+Single page application.
+React is a JavaScript Library. But people use it as a javaScript Framework.
+JSX - JavaScript Syantax Extenstion (Mixture of javascript and html)
+npx - sirf ek baar kisi bhi package ko install karta hai. For exactly one time use.
+npm - kisi bhi package ko permanently use or install karne ke liye use aata hai.
+
+To create react app ---- npx create-react-app app-name (run following in command in terminal)
+To start a server ---- npm start
+
+
+react mai components 2 type se bana sakte hai --- class based components and function based components.
+
+To return something we have to use <> and </>.
+
+Agar aisa kuch likh kar aaye ----> "Todos" is declared but its value is never read.
+iska mtlb aapne Todos ki value ko return nhi karaya .. App.js mai return ke andar return kara do .. like <Todos/>
+
+
+If using rfc function then import like this ----> import Header from "./MyComponents/Header" ----> Because we were exporting using default in Header.js
+If using rafc (Here 'a' is arrow funtion) function then import like this ----> import {Footer} from "./MyComponents/Footer"; ----> Because we were exporting using const in Footer.js
+
+Props ----> Ye ek JavaScript Object hai jo ham pass kar rhe hai from Parent Component (App.js) to Child Component (Ex. Header.js)
+Agar Header mai ab title define karna hai is tarah ki ham use ek jagah define kar dein ki har page ya jis jagah bhi hame use karna hai bas sidhe call kar lein.
+Iske liye Header ki js file mai jaao and jahan ----> export default function Header() ----> likha hai wahan Header() ke andar bas props likh do ----> export default function Header(props)
+Iske baad Parent Component yaani (App.js) mai jaake Header mai Title ko define karna hai. ----> <Header title="MyTodosList"/> (Ye return ke andar aayega).
+Iske baad ab ham jahan bhi props.title likenge waha title show ho jaayega ----> {props.title} ----> (Make sure you define this with curley brackets).
+
